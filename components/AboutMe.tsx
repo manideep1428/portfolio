@@ -19,7 +19,7 @@ export default function AboutMe(){
             </div>
             <div>
               <p className="text-gray-600 text-xl">
-               {" Hi, I'm John Doe, a Full-stack developer and ML Engg with over a experience in the OpenSource."}
+               {" Hi, I'm Manideep, a Full-stack developer and ML Engg with over a experience in the OpenSource."}
                {" I have a passion for creating innovative digital experiences that solve real problems."}
               </p>
               <div className="mt-6">
