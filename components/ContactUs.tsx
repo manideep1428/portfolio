@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { InstagramSvg, LinkedInSvg, TwitterSvg, WhatsAppSvg } from './Svg';
 import SaveMessages from '@/app/server';
+import  { toast  , ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Contact{
   name:string
@@ -19,17 +21,46 @@ export default function ContactUs() {
     try {
     if(contactForm.name && contactForm.email && contactForm.message !== ""){
       setSend(true)
+      toast.success('Your Message Is Send To Owner', {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+        toast.success('Kindly Wait For His Response', {
+          position: "top-right",
+          autoClose: false,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       setTimeout(()=>{}, 1000)
       SaveMessages( contactForm )
       setTimeout(()=>{
         setSend(false)
       },3000)
     }else{
-      setError("Please Send Valid Message")
+      toast.error('Please Send Valid Message', {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }
    } catch (error:any) {
     console.log(error)
-    setError(error)
+    toast.error(error)
    }
   }
   
@@ -53,7 +84,7 @@ export default function ContactUs() {
             ): ""}
           <form className="mt-6 space-y-6 space-x-8" onSubmit={sendMessage}>
             <div>
-              <label htmlFor="name" className="block ml-12 text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Name
               </label>
               <input
@@ -121,6 +152,7 @@ export default function ContactUs() {
               <LinkedInSvg />
             </a>
           </div>
+          <ToastContainer/>
         </div>
       </div>
     </div>
