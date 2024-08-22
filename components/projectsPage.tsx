@@ -8,7 +8,7 @@ export default function ProjectPage(){
              imageUrl="/crypto.jpg"
              description="Learn How Trades Works With Help Of An AI(Gemini)"
              gitHub={"https://github.com/manideep1428/web3_binance"}
-             linkTo="https://web3-binance.vercel.app/"
+             linkTo="https://web3-binance-2.vercel.app/"
             />
             <ProjectCard
              title="Chat With AI"
@@ -22,7 +22,7 @@ export default function ProjectPage(){
              imageUrl={"/aitalk.jpg"}
              description="AI That Transcribes And Decribes What is Seeing Through  Camera Of Your Device"
              gitHub="https://github.com/manideep1428/google_hackathon"
-             linkTo="https://google-hackathon-five.vercel.app/video"
+             linkTo="https://google-hackathon-five.vercel.app/"
             />          
         </div>
     )
