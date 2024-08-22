@@ -30,7 +30,7 @@ const Usepage = () => {
                   onClick={scrollToAbout}
                   className="inline-flex h-12 items-center justify-center rounded-md text-white border-2 bg-[#000000] px-8 py-2 text-[#ffffff] text-sm font-medium shadow-lg transition-colors hover:bg-[#ffffff] hover:text-[#000000] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
                 >
-                  View Projects
+                  About Me
                 </div>
                 <div 
                 onClick={scrollToContact}
@@ -73,7 +73,7 @@ const Usepage = () => {
             </div>
           </footer>
           <div className="fixed bottom-6 right-6 z-50">
-            <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10 rounded-full bg-[#6c5ce7] text-white shadow-2xl hover:bg-[#a29bfe] focus:outline-none focus:ring-2 focus:ring-[#a29bfe] focus:ring-offset-2"></button>
+            <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10 rounded-full bg-[#6c5ce7] text-white shadow-2xl hover:bg-[#a29bfe] focus:outline-none focus:ring-2 focus:ring-[#a29bfe] focus:ring-offset-2">AI</button>
           </div>
         </div>
   )
