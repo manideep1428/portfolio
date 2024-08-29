@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { InstagramSvg, LinkedInSvg, TwitterSvg, WhatsAppSvg } from './Svg';
+import { InstagramSvg, LinkedInSvg, TwitterSvg, WhatsAppSvg } from '../Svg';
 import SaveMessages from '@/app/server';
 import  { toast  , ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';

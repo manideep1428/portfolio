@@ -13,7 +13,6 @@ export default function AboutMe(){
                 height="400"
                 alt="Manideep"
                 objectFit="fill"
-                // style="aspect-ratio: 400 / 400; object-fit: cover;"
                 className="h-72 w-full rounded-lg object-cover"
               />
             </div>
