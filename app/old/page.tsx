@@ -2,6 +2,7 @@
 import AboutMe from '@/components/Old/AboutMe';
 import ContactUs from '@/components/Old/ContactUs';
 import ProjectPage from '@/components/Old/projectsPage';
+import Popout from '@/components/Popup';
 import Link from 'next/link'
 import React , { useEffect, useRef, useState } from 'react'
 
@@ -16,12 +17,7 @@ const Usepage = () => {
       }
       const scrollToAbout  = () => {
         aboutMe.current?.scrollIntoView({behavior: 'smooth'})
-      }
-
-  useEffect(()=>{
-    
-  },[])
-    
+      } 
   return (
         <div className="flex flex-col min-h-[100dvh]">
           <header className="bg-gradient-to-r from-[#6c5ce7] to-[#a29bfe] py-16 px-4 md:px-6 lg:px-8">
@@ -50,9 +46,8 @@ const Usepage = () => {
             <section className="py-16 md:py-20 lg:py-24">
               <div className="container mx-auto px-4 md:px-6 lg:px-8">
                 <h2 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Featured Projects</h2>
-           
+                 <Popout state={isNewUi}/>
                  <ProjectPage/>
-         
               </div>
             </section>
              <div ref={aboutMe}>

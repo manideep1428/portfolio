@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GitHubSvg } from "./Svg";
+import { GitHubSvg } from "../Svg";
 
 interface Props{
     description : string
