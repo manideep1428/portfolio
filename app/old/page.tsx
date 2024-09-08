@@ -10,7 +10,7 @@ import React , { useEffect, useRef, useState } from 'react'
 const Usepage = () => {
     const contactUs  = useRef<HTMLDivElement>(null);
     const aboutMe   =  useRef<HTMLDivElement>(null);
-    const [isNewUi , setIsNewUi] = useState(false);
+    const isNewUi  = false;
    
     const scrollToContact  = () => {
         contactUs.current?.scrollIntoView({behavior: 'smooth'})

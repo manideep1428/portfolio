@@ -21,8 +21,8 @@ export default function Popout({state}:{state:boolean}){
         <AlertDialogContent className="dark:bg-slate-700 dark:text-white">
             This Website Is Upgrading with New UI changes(BETA)
            <AlertDialogDescription className="font-semibold text-xl dark:bg-slate-700 dark:text-white">Do You want to see?</AlertDialogDescription>
-         <AlertDialogFooter>
-            <AlertDialogAction className="dark:bg-slate-700 dark:text-white"  onClick={()=>router.push('/')}>Sure</AlertDialogAction>  
+         <AlertDialogFooter  className="flex justify-between gap-4">
+            <AlertDialogAction className="dark:bg-slate-700 dark:text-white"  onClick={()=>router.push('/new')}>Sure</AlertDialogAction>  
             <AlertDialogCancel onClick={handleCancel} className="dark:bg-slate-700 dark:text-white">Cancel</AlertDialogCancel>
          </AlertDialogFooter>
         </AlertDialogContent>
